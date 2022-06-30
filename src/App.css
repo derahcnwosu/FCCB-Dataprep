@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+.pry-txt{
+    color: orangered;
+}
+.back-link{
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.App{
+    background-color: rgb(3, 3, 82);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+.btn{
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.lead-txt{
+    font-size: 4rem;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    animation: home 1s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes home {
+    to{
+        opacity: 1;
+    }
+}
+
+
+.home-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    /* justify-content: space-around; */
+}
+
+.home-navlink{
+    color: orangered;
+    background-color: #fff;
+    display: inline-block;
+    padding: 4rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.7s ease-in-out;
+}
+.home-navlink:hover{
+    background: orangered;
+    color: #fff;
+}
